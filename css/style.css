@@ -1,0 +1,264 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    min-height: 100%;
+    font-family: 'montserratregular', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+}
+/*--------header-menu---------*/
+
+.header{
+    background-color: #F9F6F1;
+    min-height: 800px;
+}
+
+header-menu{
+    min-height: 90px;
+}
+
+.section__wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainmenu__list{
+    display: flex;
+}
+
+li{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+}
+
+.slider__item{
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+    min-height: 564px;
+    background: url('../img/running_shoes_PNG5823.png') no-repeat right center;
+}
+
+.slider__text{
+    font-size: 30px;
+}
+
+.slider__big-text{
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.button{
+    display: block;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #D7B399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+}
+.slider__price--old{
+    font-size: 24px;
+    text-decoration-line: line-through;
+}
+
+.slider__price--new{
+    font-size: 42px;
+    color: #d84033;
+}
+
+/*--------section delivery---------*/
+.delivery{
+    background-color: #212121;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 69px;
+}
+
+.delivery__h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 23px;
+}
+
+.delivery__h2 span{
+    font-weight: normal;
+}
+.delivery__text{
+    font-size: 21px;
+    font-weight: 200;
+}
+
+/*--------section man-woman---------*/
+
+.man-woman__container{
+    display: flex;
+    flex-direction: row;
+}
+
+.man,
+.woman{
+    width: 50%;
+    padding: 60px 15px 58px;
+}
+
+.man-woman__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D7B399;
+    width: 80px;
+    height: 30px;
+    margin-top: 40px;
+
+}
+
+.man-woman__link:hover{
+    background-color: #bb967c;
+}
+
+.man-woman__h2 span{
+    font-weight: normal;
+}
+
+.man-woman__h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.man-woman{
+    background: rgb(249,246,241);
+    background: linear-gradient(90deg, rgba(249,246,241,1) 50%, rgba(249,224,224,1) 50%);
+}
+
+.man{
+    background: url(../img/man.png) no-repeat right bottom;
+}
+
+.woman{
+    background: url(../img/woman.png) no-repeat right bottom;
+}
+
+/*--------section new---------*/
+
+.new__container{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.catalog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+    border: 1px solid #D7B399;
+    width: 24%;
+    padding: 22px 25px 25px;
+}
+
+.new__btn{
+    width: 220px;
+    height: 50px;
+    background-color: #D7B399;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 100px;
+
+}
+.new__btn:hover{
+    background-color: #bb967c;
+}
+
+.new__h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 100px;
+}
+.card__name{
+    font-size: 14px;
+    padding: 25px 15px;
+}
+
+@media print{
+    h2{
+        display: none;
+    }
+}
+
+@media(max-width:1200px){
+    .catalog{
+        flex-wrap: wrap;
+    }
+    .card__img{
+        width: 90%;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:1000px){
+    .card{
+        width: 30%;
+    }
+}
+
+@media(max-width:770px){
+    .man-woman__container{
+        flex-direction: column;
+    }
+    .man,
+    .woman{
+    width: 100%;
+    }
+    .man-woman{
+        background: rgb(249,246,241);
+        background: linear-gradient(180deg, rgba(249,246,241,1) 50%, rgba(249,224,224,1) 50%);
+    }
+}
+
+
+@media(max-width:576px){
+    .delivery{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .card{
+        width: 45%;
+    }
+    .new__container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
